@@ -73,8 +73,8 @@ $ qbatch commands.txt
 # Submit an array job for SGE
 $ qbatch -b sge commands.txt
 
-# Set the walltime
-$ qbatch commands.txt -- -l walltime=3:00:00
+# set the walltime 
+$ qbatch commands.txt -- '#PBS -l walltime=3:00:00'
 
 # Chunk 24 commands per array job
 $ qbatch -c24 commands.txt
